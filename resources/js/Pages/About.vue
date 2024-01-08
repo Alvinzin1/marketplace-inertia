@@ -5,7 +5,7 @@ defineProps({ user: String })
 </script>
 
 <template>
-    <Head title="Marketplace - Sobre nós"></Head>
+    <Head title="Marketplace - About"></Head>
 </template>
 
 <style scoped>
