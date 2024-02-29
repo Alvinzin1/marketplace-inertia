@@ -42,4 +42,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+     /**
+     * Puxando a informação que cada user possui uma store.
+     *
+     */
+    public function store()
+    {
+        return $this->hasOne(Store::class);
+    }
 }
