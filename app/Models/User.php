@@ -47,7 +47,7 @@ class User extends Authenticatable
      * Puxando a informação que cada user possui uma store.
      *
      */
-    public function stores()
+    public function store()
     {
         return $this->hasOne(Store::class);
     }
