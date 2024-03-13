@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\StoreController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 /*
@@ -13,10 +14,6 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-});
+Route::get('/', [StoreController::class, 'index']);
 
-Route::get('/about', function() {
-    return Inertia::render('About');
-});
+

@@ -1,11 +1,17 @@
-<script setup>
-import { Head } from '@inertiajs/vue3'
+<script>
+import { Head } from '@inertiajs/vue3';
+
+export default {
+  props: {
+    stores: Array
+  }
+}
 </script>
 
 <template>
     <Head title="Marketplace - Home"></Head>
     <section class="text-gray-600 body-font">
-        <div class="container px-5 py-12 mx-auto">
+        <!-- <div class="container px-5 py-12 mx-auto">
             <div class="flex flex-wrap -m-4">
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
@@ -18,9 +24,9 @@ import { Head } from '@inertiajs/vue3'
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <li v-for="store in stores">
+  {{ store.name }}
+</li>
     </section>
 </template>
-
-<style scoped>
-</style>
