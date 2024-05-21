@@ -29,7 +29,7 @@
 
 <script>
 import { Head } from '@inertiajs/vue3';
-import Pagination from '@/components/Pagination.vue'; // Supondo que você tenha um componente de paginação
+import Pagination from '@/Components/Pagination.vue'; // Supondo que você tenha um componente de paginação
 
 export default {
     props: {
